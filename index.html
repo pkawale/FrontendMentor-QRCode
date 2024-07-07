@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body { background-color:  hsl(220, 15%, 55%);       font-size: 15px;}
+    .qr_main_component {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 2rem;
+    }
+
+    .qr_code {
+      background-color: hsl(0, 0%, 100%);
+      padding:  1.5rem;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 10px 10px 40px hsl(0, 0%, 0%, 0.1);
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 400px;
+      border-radius: 10px;
+    }
+
+    .qr_text {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      justify-content: center;
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .qr_text h1 {
+      font-weight: 700;
+    }
+
+    .qr_text p {
+      font-weight: 400;
+      color : hsl(212, 45%, 89%)
+    }
+
+
+    @media only screen and (max-width : 600px) {
+
+      body{
+        font-size: 12px;
+      }
+
+      .qr_main_component {
+        margin: 0;
+      }
+
+      .qr_code {
+        width: 300px;
+        padding: 1rem
+      }
+      img {
+        height: 300px;
+      }
+
+      .qr_text{
+        font-size: 0.8rem;
+        margin: 2rem;
+      }
+    }
+
+    @media only screen and  (min-width : 600px) and (max-width: 767px) {
+      body{
+        font-size: 15px;
+      }
+
+      .qr_main_component {
+        margin: 2rem;
+      }
+
+      .qr_code {
+        width: 400px;
+        padding: 1.5rem;
+      } 
+
+      img {
+        height: 400px;
+      }
+
+      .qr_text{
+        font-size: 1rem;
+        margin: 2rem;
+      }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px){
+      body{
+        font-size: 15px;
+      }
+
+      .qr_main_component {
+        margin: 2rem;
+        height: 100vh
+      }
+
+      .qr_code {
+        width: 300px;
+        padding: 2rem;
+      } 
+
+      img {
+        height: 300px;
+      }
+
+      .qr_text{
+        font-size: 1.2rem;
+        margin: 2rem;
+      }
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="qr_main_component">
+    <div class="qr_code">
+      <img src="./images/image-qr-code.png" alt="QR code">
+      <div class="qr_text">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Parijat Kawale</a>.
+  </div>
+</body>
+</html>
